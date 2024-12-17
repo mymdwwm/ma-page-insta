@@ -1,0 +1,201 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.header, .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+
+}
+
+.footer {
+    background-color: #1E2A37;
+    margin-top: auto;
+    
+}
+
+.texte-footer {
+    font-family:'Roboto Medium';
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 500;
+    font-size: 22px;
+    line-height:25.78px;
+    color: #FFFFFF;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    font-family: 'Roboto light';
+    font-weight: 300;
+    size:20px;
+    margin: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    line-height:23.44px;
+    text-decoration: none;
+    color: #1E2A37;
+    
+    }
+    
+nav  a:hover {
+    font-weight: 700;
+}
+
+
+.barre-recherche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #DBE5EE;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    padding: 0 10px;
+    transition: width 0.3s ease;
+}
+
+.icone-de-recherche {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.barre-recherche input {
+    border: none; 
+    background: transparent;
+    outline: none;
+    width: 1px;
+    transition: width 0.3s ease;
+    opacity: 1; 
+}
+
+.barre-recherche:focus-within input {
+    width: auto;
+    opacity: 1; 
+    padding: 0 10px;
+    text-align: left;
+}
+
+.bouton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#8C3AAA, #DB3B75, #F28F3D);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    font-weight: 700;
+    
+}
+
+.ajout-icone {
+    width: 20px;
+    height: 30px;
+    background: url(header-icone-ajout.png) no-repeat center center;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.barre-recherche.responsive,
+.bouton.responsive {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .header, .footer {
+        background: #1E2A37;
+        padding: 30px;
+    
+    }
+
+    .logo {
+        content: url("header-icone-logo-insta-white.png");
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .burger-menu div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+    }
+
+    .barre-recherche.non-responsive,
+    .bouton.non-responsive {
+        display: none;
+    }
+
+    .barre-recherche.responsive,
+    .bouton.responsive {
+        display: flex;
+    }
+
+    .barre-recherche {
+        display: flex;
+        justify-content: flex-start;
+        border-radius: 20px;
+        width: 25%;
+        height: 45px;
+    }
+
+    .icone-de-recherche {
+        display: flex;
+        margin-right: 10px;
+        height: 15px;
+    }
+
+    .barre-recherche input {
+        width: 25%;
+        padding: 10px;
+    }
+
+
+    nav a {
+        display: none;
+    }
+
+    .section-responsive {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 5px;
+        padding: 20px;
+    }
+
+    .texte-footer {
+        font-family: 'Roboto' ;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height:25.78px;
+        color: #FFFFFF;
+    }
+}
+ 
