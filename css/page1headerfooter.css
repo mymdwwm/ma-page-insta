@@ -119,7 +119,7 @@ nav a:hover {
 
 
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .header, .footer {
         background: #1E2A37;
@@ -194,6 +194,5 @@ nav a:hover {
     }
 
 
-    
 }
 
