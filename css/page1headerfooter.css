@@ -117,30 +117,7 @@ nav a:hover {
     color: #1E2A37; 
     margin: 20px   }
 
-.icon-container {
-    display: flex;
-    flex-wrap: wrap;  /* Pour ajuster les icônes quand il n'y a pas assez d'espace */
-    justify-content: space-around;  /* Espace autour des icônes */
-    align-items: center;
-    padding: 20px;
-}
 
-.icon {
-    width: 119px;
-    height: 119px;
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-    margin: 10px;  /* Espacement entre les icônes */
-}
-
-.icon1 { background-image: url('stories-icone-1.png'); }
-.icon2 { background-image: url('stories-icone-2.png'); }
-.icon3 { background-image: url('stories-icone-2-1.png'); }
-.icon4 { background-image: url('stories-icone-3.png'); }
-.icon5 { background-image: url('stories-icone-4.png'); }
-.icon6 { background-image: url('stories-icone-5.png'); }
-.icon7 { background-image: url('stories-icone-5-1.png'); }
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -216,16 +193,7 @@ nav a:hover {
         color: #FFFFFF;
     }
 
-   
-    .icon-container{ 
-        
-        justify-content: space-between; 
-        
 
-    } 
-
-    .icon:nth-of-type(n+4) 
-    { display: none;  }
     
 }
 
