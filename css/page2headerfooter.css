@@ -1,0 +1,126 @@
+.header, .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style spécifique au footer */
+.footer {
+    background-color: var(--noir);
+    margin-top: auto;
+}
+
+/* Style pour le logo du header */
+.header .logo img {
+    width: 100px;
+}
+
+/* Styles pour la navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--noir) ;
+    font-weight: 300;
+}
+
+nav ul li a:hover {
+    font-weight: 700;
+}
+
+/* Barre de recherche */
+.barre-recherche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gris_clair);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.recherche-icone img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Bouton "Créer" */
+
+.bouton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient);
+    border-radius: 12px;
+    padding: 20px;
+    color: var(--beige);
+    font-weight: 700;
+}
+
+.ajout-icone {
+    width: 18px;
+    height: 18px;
+    background: url(header-icone-ajout.png) no-repeat center center;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+/* Texte du footer */
+.meta-verified, .copyright {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--beige);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header, .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .barre-recherche {
+        width: 35px;
+        height: 35px;
+    }
+
+    .recherche-icone img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .bouton {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .texte-footer {
+        text-align: center;
+        padding: 20px;
+    }
+}
+
