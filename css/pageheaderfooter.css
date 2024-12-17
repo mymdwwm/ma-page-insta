@@ -1,3 +1,4 @@
+
 body {
     display: flex;
     flex-direction: column;
@@ -5,6 +6,8 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+
 }
 
 .header, .footer {
@@ -12,23 +15,27 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+
+
 }
 
 .footer {
     background-color: #1E2A37;
     margin-top: auto;
+    
 }
 
 .texte-footer {
-    font-family: 'Roboto Medium';
+    font-family:'Roboto Medium';
     display: flex;
     justify-content: space-between;
     width: 100%;
     font-weight: 500;
     font-size: 22px;
-    line-height: 25.78px;
+    line-height:25.78px;
     color: #FFFFFF;
 }
+
 
 nav {
     display: flex;
@@ -37,20 +44,22 @@ nav {
 }
 
 nav a {
-    font-family: 'Roboto Light';
+    font-family: 'Roboto light';
     font-weight: 300;
-    size: 20px;
+    size:20px;
     margin: 10px;
     margin-right: 20px;
     margin-left: 20px;
-    line-height: 23.44px;
+    line-height:23.44px;
     text-decoration: none;
     color: #1E2A37;
-}
-
-nav a:hover {
+    
+    }
+    
+nav  a:hover {
     font-weight: 700;
 }
+
 
 .barre-recherche {
     display: flex;
@@ -58,6 +67,7 @@ nav a:hover {
     justify-content: center;
     background: #DBE5EE;
     border-radius: 50%;
+    margin-left: 20px;
     margin-left: 20px;
     width: 60px;
     height: 60px;
@@ -72,17 +82,17 @@ nav a:hover {
 }
 
 .barre-recherche input {
-    border: none;
+    border: none; 
     background: transparent;
     outline: none;
     width: 1px;
     transition: width 0.3s ease;
-    opacity: 1;
+    opacity: 1; 
 }
 
 .barre-recherche:focus-within input {
     width: auto;
-    opacity: 1;
+    opacity: 1; 
     padding: 0 10px;
     text-align: left;
 }
@@ -91,11 +101,12 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(220deg, #8C3AAA, #DB3B75, #F28F3D);
+    background: linear-gradient(#8C3AAA, #DB3B75, #F28F3D);
     border-radius: 10px;
     padding: 10px 20px;
     color: #FFFFFF;
     font-weight: 700;
+    
 }
 
 .ajout-icone {
@@ -111,19 +122,12 @@ nav a:hover {
     display: none;
 }
 
-.titre-section { 
-    font-family: 'Roboto Medium'; 
-    font-size: 30px; font-weight: 700; 
-    color: #1E2A37; 
-    margin: 20px   }
-
-
-
 
 @media (max-width: 768px) {
     .header, .footer {
         background: #1E2A37;
         padding: 30px;
+    
     }
 
     .logo {
@@ -155,7 +159,7 @@ nav a:hover {
         display: flex;
         justify-content: flex-start;
         border-radius: 20px;
-        width: 35%;
+        width: 25%;
         height: 45px;
     }
 
@@ -170,6 +174,7 @@ nav a:hover {
         padding: 10px;
     }
 
+
     nav a {
         display: none;
     }
@@ -183,16 +188,14 @@ nav a:hover {
     }
 
     .texte-footer {
-        font-family: 'Roboto';
+        font-family: 'Roboto' ;
         flex-direction: column;
         text-align: center;
         gap: 10px;
         font-weight: 500;
         font-size: 22px;
-        line-height: 25.78px;
+        line-height:25.78px;
         color: #FFFFFF;
     }
-
-
 }
-
+ 
