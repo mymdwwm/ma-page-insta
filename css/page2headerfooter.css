@@ -8,7 +8,7 @@
 
 /* Style spécifique au footer */
 .footer {
-    background-color: var(--noir);
+    background-color: #1e2a37;
     margin-top: auto;
 }
 
@@ -31,7 +31,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--noir) ;
+    color: #1e2a37 ;
     font-weight: 300;
 }
 
@@ -44,7 +44,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--gris_clair);
+    background: #dde5EE;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -81,7 +81,7 @@ nav ul li a:hover {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 22px;
-    color: var(--beige);
+    color: white;
 }
 
 /* Responsive */

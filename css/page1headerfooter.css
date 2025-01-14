@@ -1,11 +1,3 @@
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 .header, .footer {
     display: flex;
@@ -17,12 +9,13 @@ body {
 .footer {
     background-color: #1E2A37;
     margin-top: auto;
+    width: 100%;
 }
 
 .texte-footer {
     font-family: 'Roboto Medium';
     display: flex;
-    justify-content: space-between;
+ justify-content: space-between;
     width: 100%;
     font-weight: 500;
     font-size: 22px;
@@ -101,7 +94,7 @@ nav a:hover {
 .ajout-icone {
     width: 20px;
     height: 30px;
-    background: url(header-icone-ajout.png) no-repeat center center;
+    background: url(../iconesvg/icone-ajout.svg) no-repeat center center;
     background-size: contain;
     margin-right: 10px;
 }
@@ -124,10 +117,11 @@ nav a:hover {
     .header, .footer {
         background: #1E2A37;
         padding: 30px;
+        width: 100%;
     }
 
     .logo {
-        content: url("header-icone-logo-insta-white.png");
+        content: url("../iconesvg/blanc-icone-logo-insta.svg");
     }
 
     .burger-menu {
@@ -192,7 +186,7 @@ nav a:hover {
         line-height: 25.78px;
         color: #FFFFFF;
     }
-
-
 }
+
+
 

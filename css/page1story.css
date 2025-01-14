@@ -4,18 +4,20 @@ body {
     justify-content: center;
     align-items: flex-start; 
     background-color: #f0f0f0;
-    height: 100vh;
     margin: 0;
+    width: 100%;
 }
 
 .carousel-container {
     display: flex;
     overflow: hidden;
     max-width: 100%;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    padding: 10px;
+   
+    padding: 30px;
     position: relative;
+
+    margin: 0 20px, 0, 20px;
+    max-width : 1300px;
 }
 
 .carousel {
@@ -24,8 +26,8 @@ body {
 }
 
 .carousel img {
-    margin: 0 10px;
-    width: 60px;
+    margin: 0 35px;
+    width: 80px;
 }
 
 .prev-btn, .next-btn {
@@ -45,7 +47,6 @@ body {
 
 .prev-btn {
     left: 10px; 
-    
 }
 
 .next-btn {
@@ -60,12 +61,12 @@ body {
 body.dark-mode { 
     background-color: #1c1c1c; 
     color: #ffffff; 
-
 }
 
 .carousel-container.dark-mode {
     background-color: #333333;
 }
+
 
 .mode-sombre {
     background-color: rgba(59, 59, 59, 0.8); 
@@ -102,10 +103,15 @@ body.dark-mode #toggle-dark-mode {
 
 @media (max-width: 768px) { 
     .carousel-container { 
-        max-width: 180px; 
+        max-width: 470px; 
+        margin: 0 100px 0 100px;
+        
     } 
     .carousel img { 
-        margin: 0 5px; 
-        width: 50px; 
+        
+        width: 240%; 
+        margin: 0 20px 0 40px;
+        
+       
     } 
 }
